@@ -9,3 +9,6 @@ https://github.com/hanrach/STAT545-participation
 
 and my account page:
 https://github.com/hanrach
+
+course webpage:
+https://stat545.stat.ubc.ca/
