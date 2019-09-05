@@ -12,3 +12,6 @@ https://github.com/hanrach
 
 course webpage:
 https://stat545.stat.ubc.ca/
+
+HW announcement page:
+https://github.com/STAT545-UBC-hw-2019-20/Announcements
