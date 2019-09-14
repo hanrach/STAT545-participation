@@ -1,3 +1,8 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
 ## Useful Links ##
 
 URL to the STAT 545 home repo is [here](https://github.com/STAT545-UBC/STAT545-home)
