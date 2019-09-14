@@ -1,0 +1,29 @@
+---
+title: "rmarkdown-exploration"
+author: "Rachel Han"
+date: "14/09/2019"
+output: html_document
+---
+
+```{r load, warning = FALSE, echo = FALSE}
+library(tibble)
+library(gapminder)
+library(DT)
+``````
+
+## Print out gapminder
+```{r}
+x <- gapminder
+x
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

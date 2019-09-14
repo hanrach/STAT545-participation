@@ -1,0 +1,42 @@
+---
+title: "R Markdown Exploration"
+author: "Rachel Han"
+date: "14/09/2019"
+output: ioslides_presentation
+---
+
+
+```{r load, warning = FALSE, echo = FALSE}
+library(tibble)
+library(gapminder)
+library(DT)
+``````
+
+## Exploring gapminder
+```{r}
+x<- gapminder
+x
+```
+
+## mtcars
+
+```{r}
+mtcars
+```
+
+## mt cars as tibble
+```{r}
+as_tibble(mtcars)
+```
+## mtcars wrapped data table
+```{r}
+datatable(as_tibble(mtcars))
+
+```
+
+The number of rows of the mtcars data set:
+
+```{r}
+number_of_rows_mtcars <- nrow(mtcars)
+print(number_of_rows_mtcars)
+```
