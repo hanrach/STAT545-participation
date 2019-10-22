@@ -310,15 +310,15 @@ Use `fct_reorder2()` when you have a line chart of a quantitative x against anot
 
 ```r
 ## order by life expectancy 
-ggplot(h_gap, aes(x = year, y = lifeExp,
-                  color = FILL_IN_THIS)) +
+ggplot(gap, aes(x = year, y = lifeExp,
+                  color = fct_reorder2(country,year,lifeExp))) +
   geom_line() +
   labs(color = "country")
 ```
 
-```
-## Error in ggplot(h_gap, aes(x = year, y = lifeExp, color = FILL_IN_THIS)): object 'h_gap' not found
-```
+![](cm012-exercise_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+
+
 
 ## Change order of the levels manually
 
@@ -328,17 +328,16 @@ This might be useful if you are preparing a report for say, the state of affairs
 ```r
 gapminder %>%
   ggplot() +
-  geom_bar(aes(FILL_IN_THIS)) +
+  geom_bar(aes(fct_relevel(gapminder$continent,"Africa"))) +
   coord_flip()+
+  ylab("continent")+
   theme_bw() 
-```
-
-```
-## Error in FUN(X[[i]], ...): object 'FILL_IN_THIS' not found
 ```
 
 ![](cm012-exercise_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
 More details on reordering factor levels by hand can be found [here] https://forcats.tidyverse.org/reference/fct_relevel.html
+
+Not sure what's going on here, the y axis reads as the code itself..
 
 ### Recoding factors
 
@@ -347,6 +346,15 @@ For instance, if you had levels called "blk" and "brwn", you would rather they b
 Lets recode `Oceania` and the `Americas` in the graph above as abbreviations `OCN` and `AME` respectively using the function `fct_recode()`.
 
 
+```r
+gapminder$continent %>%
+  fct_recode("OCN" = "Oceania", "AME" = "Americas") %>%
+  levels
+```
+
+```
+## [1] "Africa" "AME"    "Asia"   "Europe" "OCN"
+```
 
 ## Grow a factor (OPTIONAL)
 
