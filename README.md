@@ -13,7 +13,7 @@ Participation repo for STAT545.
 - [Class 10](https://hanrach.github.io/STAT545-participation/cm10/cm010-exercise.html)
 - [Class 11](https://hanrach.github.io/STAT545-participation/cm11/cm011-exercise.html)
 - [Class 12](https://hanrach.github.io/STAT545-participation/cm12/cm012-exercise.html)
-- [Class 13](https://hanrach.github.io/STAT545-participation/cm13/cm13.html)
+- [Class 13](https://hanrach.github.io/STAT545-participation/cm13/cm013.html)
 - [Class 14](https://hanrach.github.io/STAT545-participation/cm14/cm014-exercise.nb.html)
 
 
