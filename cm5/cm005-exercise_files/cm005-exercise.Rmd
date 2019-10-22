@@ -117,7 +117,7 @@ p <- ggplot(mauna, aes(month, conc)) +
 print(p)
 
 p +
-  geom_point(colour = "green")
+  geom_point(colour = "green",width=0.1,alpha=0.4)
 ```
 
 ### 2(d)
