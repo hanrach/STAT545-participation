@@ -115,12 +115,14 @@ p %>% ggplotly
 
 ```{r}
 # syntax
-gapminder %>% plot_ly(x = -gdpPercap,
-                     y = -lifeExp,
-                     color = -continent,
-                     type = "scatter",
-                     mode="markers")
+# gapminder %>% plot_ly(x = -gdpPercap,
+#                      y = -lifeExp,
+#                      color = -continent,
+#                      type = "scatter",
+#                      mode="markers")
+
 ```
+**couldn't run this code, gives me error saying that gdpPercap is not found!!**
 
 ## Supplemental worksheet (Optional)
 
